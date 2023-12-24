@@ -123,3 +123,14 @@ medicine.then( function(){
 
 // Another way to use promises using just .then() =>
 // fs.read('a.txt').then( callBackFunc )
+
+
+
+
+
+
+
+// SetTimeout(callbackFunc, timeInMiliSeconds)  vs  SetInterval(callbackFunc, timeInMiliSeconds) =>
+// `setTimeout` is used to execute a function once after a specified delay.
+// `setInterval` is used to repeatedly execute a function at specified intervals.
+// SetTimeout delay lagata hai aur SetInterval execute krta hai chese after perticular time period
