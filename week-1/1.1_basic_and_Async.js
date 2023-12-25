@@ -35,7 +35,8 @@ function StarPattern(n){
 // Core is a place where our code gets executed!
 // In JS there is only one executer(Single threader/ one core) hence we run the code sequentially
 
-// JS is Async in nature.
+// JavaScript (JS) can be both asynchronous (async) and synchronous (sync), depending on how code is written and executed.
+// JS is also Async in nature.
 // Complex task in JS -> sending HTTP req, do complex calulation, etc.
 // All Complex tasks is Async in nature
 // Async task dont run on the same thread
