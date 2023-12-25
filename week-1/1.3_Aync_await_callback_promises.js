@@ -55,6 +55,16 @@ function printCounter(){
 // In the above code, the for loop is a complex task which is not async task, but setInterval() is async task. which prints the counter after every 1 sec.
 // Since the for loop is complex task and it is complete utlizing JS single thread, it will ignore the setInterval()  
 
+// ChatGpt response =>
+// Alright, let's imagine your JavaScript code is like a series of tasks that need to be done.
+
+// setInterval(printCounter, 5000): You told the computer to do a task every 5 seconds. It's like asking it to say "Hello!" every 5 seconds.
+// for (let i = 0; i < 100000000000000000; i++) { counter2++ }: But then, you gave the computer another big job. It's like telling it to count from 1 to a really, really, really big number. 
+// While the computer is doing this big job, it forgets to say "Hello!" every 5 seconds because it's so busy counting.
+// So, even though the computer was supposed to say "Hello!" (print the counter) every 5 seconds, it got distracted by the big counting job you gave it. 
+// Once it finishes counting all the way up, then it remembers to say "Hello!" again.
+// In simpler terms, the computer has different tasks to do, and sometimes, if one task takes a long time, it might forget to do the other tasks for a while.
+
 
 
 
@@ -68,7 +78,7 @@ function printCounter(){
 // Callback Queue keeps the completed async tasks and the puts in the callback stack.
 
 // Chat Gpt response =>
-// When you call a funct    ion, it goes on the plate stack (call stack).
+// When you call a function, it goes on the plate stack (call stack).
 // If a task takes time (like waiting for a timer), it goes to the helper (Web API).
 // When the helper finishes, it writes a note and puts it in the line (callback queue).
 // The event loop is like a person checking if you're done with your plates. If you are, they take the notes from the line and start working on those tasks.
