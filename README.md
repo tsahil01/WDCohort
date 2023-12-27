@@ -6,4 +6,4 @@
 3. Deep dived into Async, callback and basic of Promises
 
 ## week02
-1. 
+1. Explain HTTP server, Client-Server model, Basic Express JS server
