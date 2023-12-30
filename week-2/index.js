@@ -37,3 +37,16 @@ function sum(n){
 }
 
 let calculatedSum = sum(100)
+
+
+// const express = require('express')
+// const app = express()
+// const port = 4000
+
+// app.get('/', (req, res)=>{
+//     res.send("Hello")
+// })
+
+// app.listen(port, ()=>{
+//     console.log(`App is listening on port ${port}`)
+// })
