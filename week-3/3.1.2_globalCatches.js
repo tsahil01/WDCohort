@@ -7,7 +7,7 @@ app.post('/heath-checkup', function (req, res) {
     const kidneys = req.body.kidneys; // req.body can be used bcoz of app.use(expreess.json()) middleware
     const kidneyLength = kidneys.length
     res.send(`You have ${kidneyLength} kidneys`)
-    // THE ABOVE CAN GIVE US EXCEPTION. here kidneys is in arrays but what if user sends string or sonthing else.
+    // THE ABOVE CAN GIVE US EXCEPTION. here `kidneys` expects the data in arrays but what if user sends string or sonthing else.
     // TO AVOID THE WE USE global catches middleware which is used after every route
 })
 
