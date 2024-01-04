@@ -21,7 +21,7 @@ const app = express();
 // });
 
 
-app.use(express.json()) // Is a middleware that can be user anywhere below it
+app.use(express.json()) // Is a middleware that can be used anywhere below it
 // The app.use(express.json()) can be used as req.body in app.post()
 
 
