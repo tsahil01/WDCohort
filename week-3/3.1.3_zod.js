@@ -4,7 +4,7 @@ const zod = require('zod'); // ZOD => to do inout validation
 
 const app = express();
 
-const schema = zod.array(zod.number());
+const schema = zod.array(zod.number()); // as the below kidneys is taking inputs in the form of array
 
 
 app.use(express.json()) // middleware
@@ -33,8 +33,10 @@ app.listen(4000);
 
 // SCHEMA FOR ABOVE DATA ---->
 // const schema = zod.object({
-//     email: zod.string(),
-//     password : zod.string(),
+//     email: zod.string().email(),
+//     password : zod.string().min(8),
 //     contry: zod.literal("IN").or(zod.literal("US"))
 // })
 
+// const inputObj ={...}
+// const response = schema.safeParse(inputObj)
