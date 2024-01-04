@@ -7,3 +7,6 @@
 
 ## week02
 1. Explain HTTP server, Client-Server model, Basic Express JS server
+
+## week02
+1. Middlewares, GlobalCatches, Zod
