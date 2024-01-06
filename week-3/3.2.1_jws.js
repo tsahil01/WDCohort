@@ -49,7 +49,7 @@ app.post("/signin", function (req, res) {
     });
   }
 
-  var token = jwt.sign({ username: username }, "shhhhh"); // to create token
+  var token = jwt.sign({ username: username }, jwtPassword); // to create token
   return res.json({
     token,
   });
