@@ -1,9 +1,10 @@
 const express = require('express')
 const zod = require('zod')
-const bodyParser = require('body-parser')
 
 const port = 4000
 const app = express()
+
+const schema = zod.string().min(5)
 
 app.use(express.json()) // middleware to use req.body in post request
 
@@ -40,6 +41,33 @@ app.get('/',veriftyUser, inputValidation, (req, res)=>{
     })
 })
 
+
+app.post('/posting', veriftyUser, (req, res)=>{
+    const body = req.body;
+    const items = req.body.items
+    console.log(items.length)
+    res.json({
+        msg: "Succesfully posting done"
+    })
+    console.log(body)
+})
+
+app.post('/zoding', (req, res)=>{
+    const name = req.body.name;
+    console.log(name)
+    const response = schema.safeParse(name)
+    res.send(response)
+})
+
+
+app.use((err, req, res, next)=>{
+    console.log(err)
+    res.json({
+        msg:"Something is not right here man"
+    })
+})
+
 app.listen(port, ()=>{
     console.log(`Listening on port ${port}`);
 })
+
