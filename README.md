@@ -10,4 +10,4 @@
 
 ## week03
 1. Middlewares, GlobalCatches, Zod
-2. fetch, authentication
+2. fetch, authentication, DataBases(Mongo DB)
