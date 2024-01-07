@@ -15,7 +15,8 @@ console.log(token) // op => "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoic2
 
 
 // Decoding==>>
-
+// To decode (same as going to jwt.io)
+const decode = jwt.decode(token)
 // anyone can decode or see your value using the decoding the token using https://jwt.io/ 
 // It is same as Person A says to person B that he can see person B cheque book and its sign.
 // But person A doesnot know how the bank verifies the cheque. So he can get stuck.
