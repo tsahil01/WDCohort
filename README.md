@@ -1,4 +1,5 @@
 # WDCohort
+[Notion notes](https://quickest-juniper-f9c.notion.site/Cohort-2-0-6b6c2a9f1282499aba4782b88bf7e204)
 
 ## week01
 1. Basic of JS and Async nature os JS thoery
@@ -10,4 +11,5 @@
 
 ## week03
 1. Middlewares, GlobalCatches, Zod
-2. fetch, authentication, DataBases(Mongo DB)
+2. fetch, authentication(JWS), DataBases(Mongo DB)
+3. JWS, Auth, tryCatch, Assignments
