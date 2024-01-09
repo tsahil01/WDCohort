@@ -13,3 +13,6 @@
 1. Middlewares, GlobalCatches, Zod
 2. fetch, authentication(JWS), DataBases(Mongo DB)
 3. JWS, Auth, tryCatch, Assignments
+
+## week04
+1. DOM (Document Object Model)
