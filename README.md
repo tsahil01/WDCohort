@@ -15,4 +15,4 @@
 3. JWS, Auth, tryCatch, Assignments
 
 ## week04
-1. DOM (Document Object Model)
+1. DOM (Document Object Model), connect BE & FE, oninput, debouncing concept
