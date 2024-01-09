@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calulator</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            width: 20%;
+
+        }
+    </style>
+</head>
+<body>
+    <input oninput="sum()" type="text" name="num1" id="num1" placeholder="Enter number one">
+    <input oninput="sum()" type="text" name="num2" id="num2" placeholder="Enter number two">
+    <div class="sol"></div>
+</body>
+<script>
+    const num1 = document.querySelector('#num1')
+    const num2 = document.querySelector('#num2')
+
+    function sum(){
+        // const sum = parseInt(num1.value) + parseInt(num2.value)
+        // const text = document.createTextNode(sum)
+        // document.querySelector('.sol').append(text)
+
+        // Using backend ==>
+        const a = parseInt(num1.value)
+        const b = parseInt(num2.value)
+       fetch(`http://localhost:3000/sum?a=${a}&b=${b}`).then(function(response){
+            response.text() // it is also a promise
+            .then(function(ans){
+                console.log(ans)
+                document.querySelector('.sol').innerHTML = ans
+            })
+        });
+    }
+
+</script>
+</html>
