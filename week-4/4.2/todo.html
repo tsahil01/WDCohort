@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #212121;
+            margin: auto;
+            padding: 20px;
+            text-align: center;
+            width: 50%;
+            justify-content: center;
+            
+        }
+
+        .title, .description {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+
+        button {
+            padding: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .todo {
+            max-width: 600px;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        .todo div {
+            color: #ddd;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #212121;
+            border-radius: 20px;
+        }
+
+        .todo button {
+            padding: 5px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .todo button:hover {
+            background-color: #2980b9;
+        }
+
+    </style>
+</head>
+<body>
+    <input type="text" name="title" class="title" id="" placeholder="Title">
+    <input type="text" name="description" class="description" id="" placeholder="Description">
+    <button onclick="addTodo()">Add task</button><br><br>
+    <div class="todo"></div>
+</body>
+
+<script>
+    const title = document.querySelector('.title')
+    const description = document.querySelector('.description')
+    function addTodo(){
+        const titleText = document.createTextNode(title.value)
+        const descriptionText = document.createTextNode(description.value)
+        // console.log(titleText)
+
+        const titleDiv = document.createElement('div')
+        titleDiv.append(titleText)
+        // console.log(titleDiv)
+
+        const descriptionDiv = document.createElement('div')
+        descriptionDiv.append(descriptionText)
+        // console.log(descriptionDiv)
+
+        const doneBtn = document.createElement('button')
+        doneBtn.innerHTML = "Mark as done"
+        // console.log(doneBtn)
+
+        const todoDiv = document.createElement('div')
+        todoDiv.append(titleDiv, descriptionDiv, doneBtn) 
+        
+        document.querySelector('.todo').append(todoDiv)
+    }
+</script>
+
+</html>
