@@ -16,3 +16,4 @@
 
 ## week04
 1. DOM (Document Object Model), connect BE & FE, oninput, debouncing concept
+2. DOM depth, TODO app, React intro
