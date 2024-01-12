@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div id="buttonParent">
+  </div>
+  <script>
+
+    // STATE =>
+    let state = {
+      count: 0
+    }
+
+    function onButtonPress() {
+      state.count++;
+      buttonComponentReRender()
+    }
+
+    // RE-RENDERING => (in react we dont have to write this)
+    function buttonComponentReRender() {
+      document.getElementById("buttonParent").innerHTML = "";
+      const component = buttonComponent(state.count);
+      console.log(component)
+      document.getElementById("buttonParent").appendChild(component);
+    }
+
+    // COMPONENT =>
+    function buttonComponent(count) {
+      const button = document.createElement("button");
+      button.innerHTML = `Counter ${count}`;
+      button.setAttribute("onclick", `onButtonPress()`);
+      return button;
+    }
+
+    buttonComponentReRender(); // (in react we dont have to write this)
+
+  </script>
+</body>
+
+</html>
