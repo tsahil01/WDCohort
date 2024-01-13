@@ -18,3 +18,7 @@
 1. DOM (Document Object Model), connect BE & FE, oninput, debouncing concept
 2. DOM depth, TODO app, React intro
 3. MongoDB deep-dive
+
+## week05
+1. React Intro, state, components, re-rendering, syntax
+2. Full Stack ToDo application
