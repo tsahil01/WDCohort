@@ -22,3 +22,6 @@
 ## week05
 1. React Intro, state, components, re-rendering, syntax
 2. Full Stack ToDo application
+
+## week06
+1. React component return, React re-rendering, key, Wrapper and Hooks
