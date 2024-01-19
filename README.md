@@ -27,3 +27,6 @@
 1. React component return, React re-rendering, key, Wrapper and Hooks
 2. Side effect, Hooks (useState, useEffect, useMemo, useCallback)
 3. **Everything Recapped. MUST WATCH WHEN IN DOUBT** 
+
+## week07
+1. Routing, prop drilling, Context API
