@@ -31,3 +31,6 @@
 ## week07
 1. Routing, prop drilling, Context API
 2. Context API, State management, recoil
+
+## week08
+1. Tailwind in React, Dukaan assignment, StoryBook
