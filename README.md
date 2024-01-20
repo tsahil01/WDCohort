@@ -30,3 +30,4 @@
 
 ## week07
 1. Routing, prop drilling, Context API
+2. Context API, State management, recoil
