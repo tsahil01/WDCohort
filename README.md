@@ -33,4 +33,5 @@
 2. Context API, State management, recoil
 
 ## week08
-1. Tailwind in React, Dukaan assignment, StoryBook
+1. Tailwind in React, Dukaan assignment, StoryBook, Material UI
+2. **Paytm Clone:** https://github.com/tsahil01/Paytm-Clone
