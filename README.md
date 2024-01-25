@@ -31,6 +31,8 @@
 ## week07
 1. Routing, prop drilling, Context API
 2. Context API, State management, recoil
+3. Assignments
+4. Asynchronous data queries, atomFamily, selectorFamily, lodable
 
 ## week08
 1. Tailwind in React, Dukaan assignment, StoryBook, Material UI
