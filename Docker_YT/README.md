@@ -6,10 +6,10 @@
 - [X] History of Docker 
 - [X] How to install Docker, play with it locally 
 - [X] Containers vs Images 
-- [ ] Creating a simple full stack app, Dockerfile 
-- [ ] Containerizing the backend 
-- [ ] Deploying to Dockerhub 
-- [ ] Pulling an image and deploying it to the internet 
+- [X] Creating a simple full stack app, Dockerfile 
+- [X] Containerizing the backend 
+- [X] Deploying to Dockerhub 
+- [X] Pulling an image and deploying it to the internet 
 - [ ] A small flaw in our approach, assignment
 - [ ] Caching images, layers in docker 
 - [ ] Volumes and networks 
@@ -25,7 +25,7 @@
 
 `Installation of Docker` - https://docs.docker.com/engine/install/
 
-**Inside Docker:**
+- **Inside Docker:**
     - CLI
     - Engine
     - Registy (docker hub)
