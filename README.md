@@ -1,5 +1,6 @@
 # WDCohort
 [Notion notes](https://quickest-juniper-f9c.notion.site/Cohort-2-0-6b6c2a9f1282499aba4782b88bf7e204)
+[DailyCode](https://daily-code-web.vercel.app/)
 
 ## week01
 1. Basic of JS and Async nature os JS thoery
@@ -37,3 +38,6 @@
 ## week08
 1. Tailwind in React, Dukaan assignment, StoryBook, Material UI
 2. **Paytm Clone:** https://github.com/tsahil01/Paytm-Clone
+
+## week09
+1. Custom Hook - https://daily-code-web.vercel.app/
