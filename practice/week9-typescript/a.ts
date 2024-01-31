@@ -1,32 +1,18 @@
-type User = {
-    name: string,
-    age: number
+interface User {
+	firstName: string;
+	lastName: string;
+	age: number;
 }
 
-type Job = {
-    place: string,
-    experience: number
+function islegal(user: User[]){
+    user.forEach((value)=>{
+        console.log(value.firstName);
+    })
 }
 
-type Person = User & Job
-
-function getUser(person: Person){
-    console.log(person.name)
-    console.log(person.place)
-}
-
-getUser({
-    name:"Sahil",
-    age:20,
-    place:"Nagpur",
-    experience:20
-})
-
-type Something = number | string
-
-function smth(value:Something){
-    console.log(value)
-}
-
-smth(10)
-smth("20")
+islegal([{firstName:"av",
+    lastName: "a",
+age:40 },{firstName:"ava",
+lastName: "a",
+age:40 }
+])
