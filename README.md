@@ -41,3 +41,5 @@
 
 ## week09
 1. Custom Hook - https://daily-code-web.vercel.app/
+2. TypeScript Basics: https://daily-code-web.vercel.app/
+3.  

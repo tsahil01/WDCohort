@@ -1,18 +1,6 @@
-interface User {
-	firstName: string;
-	lastName: string;
-	age: number;
+function getFirstEle <T> (arr: T[]) : T{
+    return arr[0];
 }
 
-function islegal(user: User[]){
-    user.forEach((value)=>{
-        console.log(value.firstName);
-    })
-}
-
-islegal([{firstName:"av",
-    lastName: "a",
-age:40 },{firstName:"ava",
-lastName: "a",
-age:40 }
-])
+const ele1 = getFirstEle <string> (["sahil", "tiwaskar"])
+const ele2 = getFirstEle <number> ([1, 3, 5])

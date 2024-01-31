@@ -1,12 +1,6 @@
 "use strict";
-function islegal(user) {
-    user.forEach((value) => {
-        console.log(value.firstName);
-    });
+function identity(args) {
+    return args;
 }
-islegal([{ firstName: "av",
-        lastName: "a",
-        age: 40 }, { firstName: "ava",
-        lastName: "a",
-        age: 40 }
-]);
+let op1 = identity("Hello");
+let op2 = identity(4);
