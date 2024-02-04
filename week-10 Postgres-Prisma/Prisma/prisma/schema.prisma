@@ -5,7 +5,24 @@ generator client {
   provider = "prisma-client-js"
 }
 
+
 datasource db {
   provider = "postgresql"
-  url      = env("DATABASE_URL")
+  url      = "postgres://avnadmin:AVNS__j0JbXBwovIB9RZGv78@pg-bcc9daa-sahiltiwaskar2003-409b.a.aivencloud.com:27129/defaultdb?sslmode=require"
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  email String @unique
+  firstname String?
+  lastname String?
+  password String
+}
+
+model Todo{
+  id Int @id @default(autoincrement())
+  title String
+  description String?
+  done Boolean
+  userId Int
 }
