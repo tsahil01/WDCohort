@@ -46,3 +46,4 @@
 
 ## week10
 1. Postgres
+2. ORM's - Prisma
