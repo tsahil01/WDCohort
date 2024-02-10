@@ -47,3 +47,6 @@
 ## week10
 1. Postgres
 2. ORM's - Prisma
+
+## week11
+1. Severless Backend
