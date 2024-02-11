@@ -49,4 +49,5 @@
 2. ORM's - Prisma
 
 ## week11
-1. Severless Backend
+1. Severless Backend - Cloudflare Workers
+2. AWS
