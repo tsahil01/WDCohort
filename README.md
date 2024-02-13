@@ -51,3 +51,6 @@
 ## week11
 1. Severless Backend - Cloudflare Workers
 2. AWS
+
+## week12
+1. NextJS
