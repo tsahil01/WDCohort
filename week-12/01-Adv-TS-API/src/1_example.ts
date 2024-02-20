@@ -1,9 +1,9 @@
 type User = {
-    readonly name: string;
-    readonly age: number;
+    name: string;
+    age: number;
 }
 
-const user: User = {
+const user: Readonly < User > = {
     name: "asad",
     age: 20
 }
