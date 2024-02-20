@@ -155,8 +155,17 @@ users.set("qwe", { name: "qwer", age:10 } );
 
 const user = users.get("abc");
 console.log(user);
+```
 
+## Exclude =>
+```ts
+type EventType = 'click' | 'scroll' | 'mousemove';
+type ExcludeEvent = Exclude<EventType, 'scroll'>; // 'click' | 'mousemove'
 
+const handleEvent = (event: ExcludeEvent) => {
+  console.log(`Handling event: ${event}`);
+};
 
+handleEvent('click'); // OK
 
 ```

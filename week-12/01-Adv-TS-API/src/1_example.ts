@@ -1,14 +1,9 @@
-type User = {
-    name: string;
-    age: number;
-}
-const users = new Map<string, User>()
+type EventType = 'click' | 'scroll' | 'mousemove';
+type ExcludeEvent = Exclude<EventType, 'scroll'>; // 'click' | 'mousemove'
 
-users.set("abc", { name: "abc", age:20 } );
-users.set("qwe", { name: "qwer", age:10 } );
+const handleEvent = (event: ExcludeEvent) => {
+  console.log(`Handling event: ${event}`);
+};
 
-const user = users.get("abc");
-
-console.log(user);
-
+handleEvent('click'); // OK
 
