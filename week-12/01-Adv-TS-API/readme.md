@@ -50,3 +50,22 @@ type UpdatePropsPartial = Partial <UpdateProps> // Partial, {name? age? email?}
 ```
 
 ## Readonly =>
+
+```ts
+const arr = [1, 4, 5];
+arr[0] = 30; // we can update the arr even its it is const... Reason => we can update the value inside arr. We are not changing the reference.
+```
+
+```ts
+type User = {
+    readonly name: string;
+    readonly age: number;
+}
+
+const user: User = {
+    name: "asad",
+    age: 20
+}
+
+user.name = "newName"; // TS gives error here...
+```
