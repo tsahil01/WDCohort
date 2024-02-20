@@ -1,11 +1,20 @@
 type User = {
-    name: string;
-    age: number;
+    id: string;
+    username: string;
 }
 
-const user: Readonly < User > = {
-    name: "asad",
-    age: 20
+// Record
+type Users = Record<string, number>;
+
+const users = {
+    "abc@q1" : {
+        id: "abc@q1",
+        username: "sahil"
+    },
+    "abc@q2" : {
+        id: "abc@q2",
+        username: "sahillllll"
+    }
 }
 
-user.name = "newName"; // TS gives error here...
+

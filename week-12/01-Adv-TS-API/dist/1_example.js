@@ -1,12 +1,11 @@
 "use strict";
-function sumOfAge(user1, user2) {
-    return user1.age + user2.age;
-}
-const age = sumOfAge({
-    name: "sahil",
-    age: 20
-}, {
-    name: "arun",
-    age: 40
-});
-console.log(age);
+const users = {
+    "abc@q1": {
+        id: "abc@q1",
+        username: "sahil"
+    },
+    "abc@q2": {
+        id: "abc@q2",
+        username: "sahillllll"
+    }
+};
