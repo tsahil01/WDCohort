@@ -1,4 +1,4 @@
-# Pick =>
+## Pick =>
 
 ```ts
 interface User {
@@ -23,7 +23,7 @@ function updateUser(user: UpdateProps){
 }
 ```
 
-***Pick =>***
+**Pick =>**
 - Pick allows you to create a new type by selecting a set of properties (Keys) from an existing type (Type).
 ```ts
 interface User {
@@ -40,3 +40,13 @@ function updateUser(user: UpdateProps){
     // hit the database to update the user, where u can only chage the name, age, password only
 }
 ```
+
+## Partial =>
+- In the above `UpdateProps` all the properites or some could be optional. To make it optional we use Partial rather than createing a new interface or type.
+- `Partial` makes all properties of a type optional, creating a type with the same properties, but each marked as optional.
+
+```ts
+type UpdatePropsPartial = Partial <UpdateProps> // Partial, {name? age? email?}
+```
+
+## Readonly =>
