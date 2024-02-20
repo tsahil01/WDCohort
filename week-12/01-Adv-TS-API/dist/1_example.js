@@ -1,11 +1,6 @@
 "use strict";
-const users = {
-    "abc@q1": {
-        id: "abc@q1",
-        username: "sahil"
-    },
-    "abc@q2": {
-        id: "abc@q2",
-        username: "sahillllll"
-    }
-};
+const users = new Map();
+users.set("abc", { name: "abc", age: 20 });
+users.set("qwe", { name: "qwer", age: 10 });
+const user = users.get("abc");
+console.log(user);

@@ -1,20 +1,10 @@
-type User = {
-    id: string;
-    username: string;
-}
+const users = new Map()
 
-// Record
-type Users = Record<string, number>;
+users.set("abc", { name: "abc", age:20 } );
+users.set("qwe", { name: "qwer", age:10 } );
 
-const users = {
-    "abc@q1" : {
-        id: "abc@q1",
-        username: "sahil"
-    },
-    "abc@q2" : {
-        id: "abc@q2",
-        username: "sahillllll"
-    }
-}
+const user = users.get("abc");
+
+console.log(user);
 
 
