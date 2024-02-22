@@ -53,4 +53,6 @@
 2. AWS
 
 ## week12
-1. NextJS
+1. 
+2. Adv TS
+3. Cohort 1 - Deploying npm packages, Intro to Monorepos
