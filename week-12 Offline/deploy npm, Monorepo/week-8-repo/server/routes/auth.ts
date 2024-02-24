@@ -4,15 +4,13 @@ import { authenticateJwt, SECRET } from "../middleware/";
 import { User } from "../db";
 import { z } from "zod";
 
-const signupInput = z.object({
-  username: z.string(),
-  package: z.string()
-})
+import { signinInput } from "@tsahil/common"
+
 
 const router = express.Router();
 
   router.post('/signup', async (req, res) => {
-    const parsedResponse = signupInput.safeParse(req.body);
+    const parsedResponse = signinInput.safeParse(req.body);
     if(!parsedResponse.success){
       return res.status(411).json({
         msg: "err while parsing"
