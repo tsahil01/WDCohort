@@ -56,3 +56,9 @@
 1. 
 2. Adv TS
 3. Cohort 1 - Deploying npm packages, Intro to Monorepos
+
+## week13
+1. Project - Medium Clone
+
+## week14
+1. Intro to Next.js
