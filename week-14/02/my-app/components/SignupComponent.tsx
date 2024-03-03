@@ -31,8 +31,8 @@ export function Signup() {
                                 username,
                                 password
                             });
-                            console.log(response);
-                            if(response.data){
+                            console.log(response.data);
+                            if(response.data.msg){
                                 router.push('/')
                             }
 
