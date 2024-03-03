@@ -61,4 +61,5 @@
 1. Project - Medium Clone
 
 ## week14
-1. Intro to Next.js
+1. Intro to Next.js (Client Side)
+2. Next.js (Server Side)
