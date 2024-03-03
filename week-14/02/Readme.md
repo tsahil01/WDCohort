@@ -26,3 +26,9 @@ export default async function Home() {
   );
 }
 ```
+
+### Loading in NEXT
+![alt text](image-1.png)
+
+
+## API Routes in NEXT -
