@@ -5,8 +5,8 @@ WORKDIR /app
 COPY . .
 
 RUN npm install
-RUN nxp prisma generate
-RUN num run build
+RUN npx prisma generate
+RUN npm run build
 
 EXPOSE 3000
 
