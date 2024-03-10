@@ -63,6 +63,7 @@
 ## week14
 1. Intro to Next.js (Client Side)
 2. Next.js (Server Side)
+3. Offline - Backend in Next.js
 
 ## week15
 1. Docker
