@@ -71,4 +71,7 @@
 3. Docker-3 
 
 ## week16
-1. Monorepo
+- Monorepo - turborepo
+
+## week16 offline
+1. Auth with Cookie
