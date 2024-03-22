@@ -6,7 +6,10 @@ import cookieParser from "cookie-parser";
 const JWT_SECRET = "somerandomkey";
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    credentials: true,
+    origin: ""
+}));
 app.use(cookieParser());
 
 app.get('/', (req, res)=>{
