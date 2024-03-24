@@ -75,3 +75,4 @@
 
 ## week16 offline
 1. Auth with Cookie
+2. NextAuth.js
