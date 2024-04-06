@@ -82,3 +82,4 @@
 
 
 ## week 19 offline
+1. Middlwares in Next.js
