@@ -22,5 +22,9 @@ wss.on('connection', function connection(ws) {
     });
   });
 
+  ws.on("new", ()=>{
+    console.log("NEWWWWWW");
+  })
+
   ws.send('Hello! Message From Server!!');
 });

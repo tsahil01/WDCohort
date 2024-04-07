@@ -12,6 +12,9 @@ export default function App(){
     newSocket.onmessage = (message) =>{
       console.log("Msg Recvd: ", message.data);
     }
+    newSocket.onmessage = (as) =>{
+      console.log("as: ",as);
+    }
     setSocket(newSocket);
     return () => newSocket.close();
   }, [])

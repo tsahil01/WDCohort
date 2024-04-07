@@ -83,3 +83,7 @@
 
 ## week 19 offline
 1. Middlwares in Next.js
+
+## week 19
+1. Adv BE communication - Sockets
+2. Redis
