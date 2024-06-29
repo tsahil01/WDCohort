@@ -26,13 +26,12 @@ async function startServer() {
 startServer();
 
 app.post('/submit', async (req, res)=>{
-    const { problmeId, userId, code, language } = req.body;
+    const { problemId, userId, code, language } = req.body;
     // push data to database using prisma
 
     // push data to redis
     try {
-
-        await client.lPush("submissions", JSON.stringify({problmeId, userId, code, language}));
+        await client.lPush("submissions", JSON.stringify({problemId, userId, code, language}));
         res.json({
             message: 'Submission received'
         });
