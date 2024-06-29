@@ -86,7 +86,7 @@
 
 ## week 19
 1. Adv BE communication - Sockets
-2. Redis
+2. Redis, Queues and Pubsubs
 
 ## week 20
 20.2 OPEN API Spec (Offline)
