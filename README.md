@@ -90,3 +90,6 @@
 
 ## week 20
 20.2 OPEN API Spec (Offline)
+
+## week 21
+21.1 Rate limitting, DDoS and Captcha
