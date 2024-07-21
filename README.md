@@ -27,7 +27,7 @@
 ## week06
 1. React component return, React re-rendering, key, Wrapper and Hooks
 2. Side effect, Hooks (useState, useEffect, useMemo, useCallback)
-3. **Everything Recapped. MUST WATCH WHEN IN DOUBT** 
+3. **Everything Recapped. MUST WATCH WHEN IN DOUBT**
 
 ## week07
 1. Routing, prop drilling, Context API
@@ -53,7 +53,7 @@
 2. AWS
 
 ## week12
-1. 
+1.
 2. Adv TS
 3. Cohort 1 - Deploying npm packages, Intro to Monorepos
 
@@ -68,7 +68,7 @@
 ## week15
 1. Docker-1
 2. Docker-2
-3. Docker-3 
+3. Docker-3
 
 ## week16
 - Monorepo - turborepo
@@ -94,3 +94,6 @@
 ## week 21
 21.1 Rate limitting, DDoS and Captcha
 21.2 Singleton Pattern + Pub subs
+
+## week 27
+27.1 Kubernetes 1
