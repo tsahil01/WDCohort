@@ -17,37 +17,30 @@ const redis_1 = require("redis");
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 const client = (0, redis_1.createClient)();
-client.on('error', (e) => {
-    console.log('Redis Client Error: ', e);
-});
+client.on('error', (err) => console.log('Redis Client Error', err));
+app.post('/submission', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    const { problemId, code, language } = req.body;
+    console.log(`Received submission for problem ${problemId}`);
+    try {
+        yield client.lPush("problems", JSON.stringify({ problemId, code, language }));
+        res.status(200).send('Submission Received and stored in Redis');
+    }
+    catch (err) {
+        res.status(500).send('Submission Failed');
+    }
+}));
 function startServer() {
     return __awaiter(this, void 0, void 0, function* () {
         try {
             yield client.connect();
-            console.log('Connected to Redis Server');
+            console.log('Connected to Redis');
             app.listen(3000, () => {
-                console.log('Server is running on port 3000');
+                console.log('Server started on port 3000');
             });
         }
-        catch (e) {
-            console.log('Error starting server: ', e);
+        catch (err) {
+            console.log('Error connecting to Redis', err);
         }
     });
 }
 startServer();
-app.post('/submit', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
-    const { problmeId, userId, code, language } = req.body;
-    // push data to database using prisma
-    // push data to redis
-    try {
-        yield client.lPush("submissions", JSON.stringify({ problmeId, userId, code, language }));
-        res.json({
-            message: 'Submission received'
-        });
-    }
-    catch (e) {
-        res.status(500).json({
-            message: 'Internal Server Error'
-        });
-    }
-}));
